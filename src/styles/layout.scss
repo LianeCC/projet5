@@ -1,0 +1,20 @@
+header {
+    background-color: #f8f8f8;
+    padding: 10px;
+    
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+  
+        li {
+          margin: 0 10px;
+  
+            &:hover {
+              color: darkred; 
+            }
+          }
+        }
+      }
+    }
