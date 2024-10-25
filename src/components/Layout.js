@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import './styles/layout.scss';
-import logo from "./images/logo-kasa.png";
-import logoWhite from "./images/logo-kasa-white.png";
+import './Layout.scss';
+import logo from "../images/logo-kasa.png";
+import logoWhite from "../images/logo-kasa-white.png";
 
 const Layout = ({ children }) => {
     return (
