@@ -1,6 +1,6 @@
 import React from 'react';
 
-const APropos = () => {
+const Apropos = () => {
     return (
         <div>
             <h1>À Propos</h1>
@@ -9,4 +9,4 @@ const APropos = () => {
     );
 };
 
-export default APropos;
+export default Apropos;
