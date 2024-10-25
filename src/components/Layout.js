@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
                     <img src={logo} alt="Logo" />
                     <nav>
                         <ul>
-                            <li><NavLink to="../pages/Home" exact activeClassName="active">Accueil</NavLink></li>
+                            <li><NavLink to="/" exact activeClassName="active">Accueil</NavLink></li>
                             <li><NavLink to="../pages/Apropos" activeClassName="active">À propos</NavLink></li>
                         </ul>
                     </nav>
