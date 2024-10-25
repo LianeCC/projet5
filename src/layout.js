@@ -1,23 +1,26 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './styles/layout.scss';
-import logo from "./images/logo-kasa.png"
+import logo from "./images/logo-kasa.png";
+import logoWhite from "./images/logo-kasa-white.png";
 
 const Layout = ({ children }) => {
     return (
         <div className="layout">
             <header>
-                <img src={logo} alt="Logo" />
-                <nav>
-                    <ul>
-                        <li><Link to="/">Accueil</Link></li>
-                    <li><Link to="/apropos">À propos</Link></li>
-                    </ul>
-                </nav>
+                <div className="header-content">
+                    <img src={logo} alt="Logo" />
+                    <nav>
+                        <ul>
+                            <li><NavLink to="/" exact activeClassName="active">Accueil</NavLink></li>
+                            <li><NavLink to="/apropos" activeClassName="active">À propos</NavLink></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
             <main>{children}</main>
             <footer>
-                <p>K(ajoutimage)SA</p>
+                <img src ={logoWhite} alt="Logo en blanc" />
                 <p>© 2020 Kasa. All right reserved</p>
             </footer>
         </div>

@@ -1,10 +1,13 @@
 import React from 'react';
+import Banner from "../components/banner";
+import "./home.scss";
 
 const Home = () => {
     return (
-        <div>
-            <h1>HOME : Chez vous, partout et ailleurs</h1>
+        <div className="home">
+            <Banner text="Chez vous, partout et ailleurs" />
         </div>
+       
     );
 };
 
