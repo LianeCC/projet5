@@ -13,14 +13,14 @@ const Layout = ({ children }) => {
                     <nav>
                         <ul>
                             <li><NavLink to="/" exact activeClassName="active">Accueil</NavLink></li>
-                            <li><NavLink to="../pages/Apropos" activeClassName="active">À propos</NavLink></li>
+                            <li><NavLink to="/Apropos" activeClassName="active">À propos</NavLink></li>
                         </ul>
                     </nav>
                 </div>
             </header>
             <main>{children}</main>
             <footer>
-                <img src ={logoWhite} alt="Logo en blanc" />
+                <img src={logoWhite} alt="Logo en blanc" />
                 <p>© 2020 Kasa. All rights reserved</p>
             </footer>
         </div>
