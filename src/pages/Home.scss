@@ -1,6 +1,15 @@
 .home {
     display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center; 
     margin-top: 50px;
+    margin-bottom: 30px;
   }
+
+   // Media query pour les appareils mobiles
+ @media (max-width: 480px) { 
+  .home {
+      margin-top: 10px;
+  }
+}

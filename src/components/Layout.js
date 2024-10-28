@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
             <main>{children}</main>
             <footer>
                 <img src ={logoWhite} alt="Logo en blanc" />
-                <p>© 2020 Kasa. All right reserved</p>
+                <p>© 2020 Kasa. All rights reserved</p>
             </footer>
         </div>
     );
