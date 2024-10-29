@@ -11,8 +11,9 @@
   }
 
    // Media query pour les appareils mobiles
- @media (max-width: 480px) { 
+ @media (max-width: 380px) { 
   .a-propos {
       margin-top: 10px;
+      margin-bottom: 15px;
   }
 }
