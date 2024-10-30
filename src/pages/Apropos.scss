@@ -1,19 +1,24 @@
 .a-propos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 30px;
 
-    .collapses {
-        margin-top: 10px;
+  .collapses {
+    margin-top: 10px;
+
+    .collapse-title {
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
+}
 
-   // Media query pour les appareils mobiles
+// Media query pour les appareils mobiles
  @media (max-width: 380px) { 
   .a-propos {
-      margin-top: 10px;
-      margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 }

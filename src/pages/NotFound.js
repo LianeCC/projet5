@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import "./NotFound.scss";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 const NotFound = () => {
     return (

@@ -1,0 +1,17 @@
+.host-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    img {
+        width: 64px;
+        border-radius: 50%;
+    }
+    
+    p {
+        max-width: 93px;
+        color: #ff6161;
+        margin-right: 10px;
+    }
+
+}

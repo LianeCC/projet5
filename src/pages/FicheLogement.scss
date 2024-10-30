@@ -1,0 +1,47 @@
+.logement-informations {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: 0 auto;
+    
+    .details-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .details-on-location {
+            margin-bottom: 30px;
+
+            h1 {
+                font-size: 36px;
+                color: #ff6161;
+                font-weight: 500;
+                text-align: left;
+                margin: 0px;
+            }
+
+            p{
+                font-size: 18px ;
+                margin-top: 5px; 
+                margin-bottom: 30px;
+            }
+        }  
+    } 
+    
+    .details-on-host {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description-equipements-logement-details {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        
+        .collapse-title h2 {
+            font-size:18px;
+        } 
+
+    }
+}
+            

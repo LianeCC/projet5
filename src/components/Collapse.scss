@@ -7,27 +7,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
         padding-left: 15px;
-        padding-right: 20px;
         cursor: pointer;
         background-color: #f55d5d;    
         border-radius: 5px;
-
         h2 {
             margin: 0;
             font-size: 24px;
             color: white;
         }
-
         .arrow {
             width: 40px;
             height: 40px;
             fill: white;
             transition: transform 0.3s ease;
         }
-
         .rotate {
             transform: rotate(180deg); 
         }
@@ -54,7 +48,7 @@
     .collapse {
         width: 335px;
         min-height: 30px;
-    
+
         .collapse-title {
             height: 30px;
     
@@ -66,8 +60,6 @@
                 width: 32px;
                 height: 32px;
             }
-    
-           
         }
     
         .collapse-content {

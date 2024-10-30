@@ -9,14 +9,15 @@ import Layout from "./components/Layout";
 const AppRouter = () => {
   return (
     <Router>
-      <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/FicheLogement/:id" element={<FicheLogement />} />
-          <Route path="/Apropos" element={<APropos />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<Layout />}> 
+            <Route index element={<Home />} />
+            <Route path="/FicheLogement/:id" element={<FicheLogement />} />
+            <Route path="/Apropos" element={<APropos />} />
+            <Route path="*" element={<NotFound />} />
+          </Route> 
+        
         </Routes>
-      </Layout>
     </Router>
   );
 };
