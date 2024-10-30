@@ -3,10 +3,11 @@ import logements from '../data/logements.json';
 import { useNavigate } from 'react-router-dom';
 import './Cards.scss';
 
-const Cards = () => {
+const Cards = ({id, title, picture}) => {
     const navigate = useNavigate();
+
     const handleCardClick = (id) => {
-        navigate(`/logement/${id}`);
+        navigate(`/FicheLogement/${id}`);
     };
 
   return (
