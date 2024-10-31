@@ -73,9 +73,10 @@
   // Media query pour les appareils mobiles
  @media (max-width: 380px) { 
   .layout {
-    
     header {
       .header-content {
+        margin-left: 20px;
+        margin-right: 20px;
         .img {
           max-width: 145px;
         }
@@ -84,7 +85,6 @@
             display: flex;
             justify-content: space-between;
             gap: 26px;
-
             li {
               margin: 0px;
                 font-size: 12px;
@@ -94,19 +94,18 @@
         }
       } 
     }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p {
-      padding-top: 5px;
-      width: 130px;
-      text-align: center;
-      font-size: 12px;
-    }
-  }  
-
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 40px;
+      p {
+        padding-top: 5px;
+        width: 130px;
+        text-align: center;
+        font-size: 12px;
+      }
+    }  
   }
 }

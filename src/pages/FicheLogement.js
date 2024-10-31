@@ -29,7 +29,7 @@ const FicheLogement = () => {
                     <p>{logement.location}</p>
                     <Tags tags={logement.tags} />
                 </div>
-                <div className="detais-on-host">
+                <div className="details-on-host">
                     <HostInformation host={logement.host} />
                     <RatingStarChart rating={logement.rating} />
                 </div>
@@ -38,7 +38,10 @@ const FicheLogement = () => {
             <div className="description-equipements-logement-details">
                 <Collapse title="Description" content={logement.description} />
                 <Collapse title="Équipements" content={logement.equipments.map((equipment, index) => (
-                        <p key={index}>{equipment}</p>))}/>
+                        <ul>
+                        <li key={index}>{equipment}</li>
+                        </ul>
+                        ))}/>
             </div>
             
         </section>

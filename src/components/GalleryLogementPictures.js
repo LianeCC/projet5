@@ -20,29 +20,32 @@ const GalleryLogementPictures = ({ pictures }) => {
                 className="gallery-image" 
             />
 
-            <button className="arrow left" onClick={handlePrev}>
-                <svg
-                    className="arrow-icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                >
-                <path d="M15.41 7.41 10.83 12l4.58 4.59L14 18l-6-6 6-6z"></path>                </svg>
-            </button>
+            {totalPictures >1 && (
+                <> {/*fragment  - regroupe plusieurs éléments sans ajouter d'html supplémentaire*/}
+                    <button className="arrow left" onClick={handlePrev}>
+                        <svg
+                            className="arrow-icon"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                        <path d="M15.41 7.41 10.83 12l4.58 4.59L14 18l-6-6 6-6z"></path>                </svg>
+                    </button>
 
-            <button className="arrow right" onClick={handleNext}>
-                <svg
-                    className="arrow-icon"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                >
-                    <path d="M8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"></path>
-                </svg>
-            </button>
+                    <button className="arrow right" onClick={handleNext}>
+                        <svg
+                            className="arrow-icon"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path d="M8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"></path>
+                        </svg>
+                    </button>
 
-            <div className="image-counter">
-                {currentIndex + 1}/{totalPictures}
-            </div>
-
+                    <div className="image-counter">
+                        {currentIndex + 1}/{totalPictures}
+                    </div>
+                </>
+            )}
         </div>
     );
 };

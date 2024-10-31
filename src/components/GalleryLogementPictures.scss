@@ -49,3 +49,30 @@
         font-size: 18px;
     }
 }
+
+
+// Media query pour les appareils mobiles
+@media (max-width: 380px) { 
+    .gallery-container {
+        width: 335px;
+        height: 255px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        .arrow {   
+            &.left {
+                left: -15px;
+            }
+            &.right {
+                right: -15px;
+            }
+                .arrow-icon {
+                    width: 40px; 
+                    height: 40px;
+                }
+        }
+        .image-counter {
+            display: none;
+        }
+    }
+}

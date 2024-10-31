@@ -20,5 +20,11 @@
   .a-propos {
     margin-top: 10px;
     margin-bottom: 15px;
+    .collapses {
+      .collapse-title {
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+    }
   }
 }
