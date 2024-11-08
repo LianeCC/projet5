@@ -3,7 +3,11 @@
   flex-direction: column;
   justify-content: center; 
   align-items: center; 
-  margin-bottom: 30px;
+
+  .banner {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
   .collapse {
     margin: 40px 0px;
@@ -18,7 +22,7 @@
 // Media query pour les appareils mobiles
  @media (max-width: 380px) { 
   .a-propos {
-    margin-top: 10px;
+
     .collapse {
       margin: 0px 0px;
       .collapse-title {
