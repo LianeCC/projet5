@@ -5,8 +5,8 @@
   align-items: center; 
   margin-bottom: 30px;
 
-  .collapses {
-    margin-top: 10px;
+  .collapse {
+    margin: 40px 0px;
 
     .collapse-title {
       padding-top: 10px;
@@ -19,8 +19,8 @@
  @media (max-width: 380px) { 
   .a-propos {
     margin-top: 10px;
-    margin-bottom: 15px;
-    .collapses {
+    .collapse {
+      margin: 0px 0px;
       .collapse-title {
         padding-top: 2px;
         padding-bottom: 2px;

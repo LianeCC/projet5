@@ -5,6 +5,8 @@
 
     &.open {
         background-color: #fafafa; 
+        margin-bottom: 20px;
+
     }
 
     .collapse-title {
@@ -54,7 +56,6 @@
     .collapse {
         width: 335px;
         min-height: 30px;
-        
         .collapse-title {
             height: 30px;
             h2 {
@@ -65,14 +66,12 @@
                 height: 32px;
             }
         }
-        
         .collapse-content {
             font-size: 13px;
             padding: 10px 20px;
             line-height: 17px;
-            
             &.open {
-                padding-top: 20px;
+                padding: 10px 20px;
                 margin-bottom: 10px;
                 max-height: 500px;
             }
