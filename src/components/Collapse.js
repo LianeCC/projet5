@@ -3,23 +3,13 @@ import "./Collapse.scss";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isClosing, setIsClosing] = useState(false); 
 
   const toggleCollapse = () => {
-    if (isOpen) {
-      setIsClosing(true); // fermé de base
-      setTimeout(() => {
-        setIsOpen(false);
-        setIsClosing(false); // réinitia après fin de l'animation
-      }, 100); // durée animation fermeture
-    } else {
-      setIsOpen(true);
-      setIsClosing(false); // réintia état de fermeture lors de l'ouverture
-    }
+    setIsOpen((prev) => !prev);
   };
 
   return (
-    <div className="collapse">
+    <div className={`collapse ${isOpen ? "open" : ""}`}>
       <div className="collapse-title" onClick={toggleCollapse}>
         <h2>{title}</h2>
         <svg
@@ -32,7 +22,7 @@ const Collapse = ({ title, content }) => {
         </svg>
       </div>
 
-      <div className={`collapse-content ${isOpen ? "open" : ""} ${isClosing ? "closing" : ""}`}>
+      <div className={`collapse-content ${isOpen ? "open" : ""}`}>
         {content}
       </div>
     </div>

@@ -1,6 +1,11 @@
 .collapse {
     width: 1023px;
     min-height: 52px;
+    overflow: hidden;
+
+    &.open {
+        background-color: #fafafa; 
+    }
 
     .collapse-title {
         height: 52px;
@@ -11,7 +16,6 @@
         cursor: pointer;
         background-color: #f55d5d;    
         border-radius: 6px;
-        z-index: 20;
 
         h2 {
             margin: 0;
@@ -31,38 +35,26 @@
     }
 
     .collapse-content {
-        position:relative;
-        top: -4px;
-        padding: 30px 20px;
-        line-height: 25px ;
-        background-color: #fafafa;
+        padding: 0px 20px;
+        line-height: 25px;
         opacity: 0;
-        max-height: 0; 
-        z-index: -1;
+        max-height: 0;
         transition: all 0.15s ease-in-out;
-        
-        &.open {
-            opacity: 1; 
-            margin-bottom: 40px;
-            max-height: 1000px;
-            height: auto; 
-            transform: translateY(-4px);
-        }
 
-        & .closing {
-            opacity: 0;
-            max-height: 0;
-            transform: translateY(4px);
+        &.open {
+            opacity: 1;
+            max-height: 2500px;
+            padding: 20px 20px;
         }
     }
 }
 
-
-  // Media query pour les appareils mobiles
-  @media (max-width: 380px) { 
+// Media query pour les appareils mobiles
+@media (max-width: 380px) { 
     .collapse {
         width: 335px;
         min-height: 30px;
+        
         .collapse-title {
             height: 30px;
             h2 {
@@ -73,11 +65,12 @@
                 height: 32px;
             }
         }
+        
         .collapse-content {
             font-size: 13px;
             padding: 10px 20px;
-            line-height: 17px ;
-            opacity: 0;
+            line-height: 17px;
+            
             &.open {
                 padding-top: 20px;
                 margin-bottom: 10px;

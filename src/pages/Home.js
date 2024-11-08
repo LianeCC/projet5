@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../components/Banner";
 import "./Home.scss";
 import Cards from "../components/Cards";
+import Tags from "../components/TagsLogement";
 
 const Home = () => {
     return (

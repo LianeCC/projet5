@@ -3,7 +3,7 @@ import logements from "../data/logements.json";
 import { useNavigate } from "react-router-dom";
 import "./Cards.scss";
 
-const Cards = ({id, title, picture}) => {
+const Cards = () => {
   const navigate = useNavigate();
   const handleCardClick = (id) => {
         navigate(`/FicheLogement/${id}`);
